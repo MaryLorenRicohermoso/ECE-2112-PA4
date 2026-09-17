@@ -42,11 +42,37 @@ Viscomm
 
 ```
 
+## B. VISAYAS FEMALE DATAFRAME
 
+  Create a DataFrame named `VisFemale` containing examinees whose `Hometown` is "Visayas" and `Gender` is "Female", retaining `Name, Track, GEAS, Electronics, and Average`. Display VisFemale, then separately display a subset where Average is at least 60 without modifying `VisFemale`.
 
+These are the Functions that are used in this Problem:
 
+• `.loc` - Fiters the rows based on combined categorical equality checks and retrieves specified columns.
 
+Example:
 
+        VisFemale = df.loc[(df ['Hometown'] == 'Visayas') & (df ['Gender'] == 'Female')
+
+• `Boolean Indexing ([VisFemale['Average'] >= 60)` - uses a greater than or equal relational relationship (>=) on the `Average` column to extract matching records.
+
+Example:
+
+      VisFemale_60 = VisFemale [VisFemale['Average']>= 60]
+
+Combining all these Functions, the code used for this is: 
+
+```Python
+
+import pandas as pd 
+
+VisFemale = df.loc[(df ['Hometown'] == 'Visayas') & (df ['Gender'] == 'Female'), ['Name', 'Track', 'GEAS', 'Electronics', 'Average']]
+VisFemale
+
+VisFemale_60 = VisFemale [VisFemale['Average']>= 60]
+VisFemale_60
+
+```
 
 
 
