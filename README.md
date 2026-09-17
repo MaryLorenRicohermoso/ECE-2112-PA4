@@ -90,7 +90,7 @@ Example:
 
 Example:
 
-      TrackTable = pd.DataFrame({'Track': [...], 'Average': [Communication, Instrumentation, Microelectronics})
+      TrackTable = pd.DataFrame({'Track': [...], 'Average': [...]})
 
 • `plt.subplots(1,3)` - A matplotlib function initializing a grid of 1 row and 3 columns to organize multiple plots in a single figure. 
 
