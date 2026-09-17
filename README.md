@@ -30,7 +30,17 @@ Example:
 
 Combining all these Functions, the code used for this is: 
 
+```Python
 
+import pandas as pd
+
+Average = df['Average'] = df[['Math', 'Electronics', 'GEAS', 'Communication']].mean(axis=1)
+Average
+
+VisComm = df.loc[(df ['Hometown'] == 'Visayas') & (df ['Track'] == 'Communication'), ['Name', 'Gender', 'Math', 'Electronics', 'Average']]
+Viscomm
+
+```
 
 
 
